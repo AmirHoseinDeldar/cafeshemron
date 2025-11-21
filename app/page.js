@@ -2,6 +2,7 @@ import Image from "next/image";
 import Header from "./components/Header";
 import AboutCafe from "./components/AboutUs";
 import OurDishes from "./components/OurDishes";
+import DailyOffer from "./components/DailyOffer";
 
 export default function Home() {
   return (
@@ -9,7 +10,7 @@ export default function Home() {
       <Header />
       <AboutCafe />
       <OurDishes />
-      {/* <DailyOffer /> */}
+      <DailyOffer />
       {/* <OurMenu /> */}
       {/* <IntroVideo /> */}
       {/* <OurIngredients /> */}

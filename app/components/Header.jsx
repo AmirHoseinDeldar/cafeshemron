@@ -50,7 +50,7 @@ const Header = () => {
           <div className="col-lg-6">
             <div className="hero-images">
               <div className="hero-image">
-                <figure>
+                <figure className="image-anime">
                   <Image
                     width={1200}
                     height={1200}
