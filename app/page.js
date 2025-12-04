@@ -3,6 +3,7 @@ import Header from "./components/Header";
 import AboutCafe from "./components/AboutUs";
 import OurDishes from "./components/OurDishes";
 import DailyOffer from "./components/DailyOffer";
+import OurMenu from "./components/OurMenu";
 
 export default function Home() {
   return (
@@ -11,7 +12,7 @@ export default function Home() {
       <AboutCafe />
       <OurDishes />
       <DailyOffer />
-      {/* <OurMenu /> */}
+      <OurMenu />
       {/* <IntroVideo /> */}
       {/* <OurIngredients /> */}
       {/* <OurBlog /> */}

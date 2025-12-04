@@ -4969,7 +4969,7 @@ header.main-header .header-sticky.active {
 .our-menu-item {
   width: calc(50% - 30px);
   display: flex;
-  flex-wrap: wrap;
+
   align-items: center;
 }
 
