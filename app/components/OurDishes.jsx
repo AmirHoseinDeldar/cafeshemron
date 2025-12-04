@@ -1,8 +1,17 @@
+"use client";
 import Image from "next/image";
 import Link from "next/link";
-import React from "react";
+import React, { useEffect } from "react";
+
 
 const OurDishes = () => {
+  useEffect(() => {
+    if (typeof window !== "undefined") {
+      const WOW = require("wowjs").WOW; // ← درست
+      new WOW({ live: false }).init(); // ← فقط WOW، نه WOW.WOW
+    }
+  }, []);
+
   return (
     <div className="our-dishes">
       <div className="container">

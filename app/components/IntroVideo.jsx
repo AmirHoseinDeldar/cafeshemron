@@ -1,6 +1,14 @@
-import React from "react";
+"use client";
+import React, { useEffect } from "react";
 
 const IntroVideo = () => {
+  useEffect(() => {
+    if (typeof window !== "undefined") {
+      const WOW = require("wowjs").WOW; // ← درست
+      new WOW({ live: false }).init(); // ← فقط WOW، نه WOW.WOW
+    }
+  }, []);
+
   return (
     <div className="intro-video">
       <div className="container-fluid">

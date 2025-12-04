@@ -1,8 +1,15 @@
 "use client";
 import Image from "next/image";
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 
 const OurMenu = () => {
+  useEffect(() => {
+    if (typeof window !== "undefined") {
+      const WOW = require("wowjs").WOW; // ← درست
+      new WOW({ live: false }).init(); // ← فقط WOW، نه WOW.WOW
+    }
+  }, []);
+
   const [activeTab, setActiveTab] = useState("appetizers");
 
   const menuItems = {
@@ -195,7 +202,7 @@ const OurMenu = () => {
                     <div className="our-menu-list">
                       {menuItems[activeTab].length > 0 ? (
                         menuItems[activeTab].map((item, index) => (
-                          <div className="our-menu-item">
+                          <div className="our-menu-item" key={index}>
                             <div className="our-menu-image">
                               <Image
                                 src={item.image}

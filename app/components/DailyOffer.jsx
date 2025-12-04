@@ -1,9 +1,18 @@
+"use client";
 import Image from "next/image";
 import Link from "next/link";
-import React from "react";
+import React, { useEffect } from "react";
+
 import { FaStar } from "react-icons/fa";
 
 const DailyOffer = () => {
+  useEffect(() => {
+    if (typeof window !== "undefined") {
+      const WOW = require("wowjs").WOW; // ← درست
+      new WOW({ live: false }).init(); // ← فقط WOW، نه WOW.WOW
+    }
+  }, []);
+
   return (
     <div className="daily-offer">
       <div className="container">
