@@ -6,6 +6,7 @@ import DailyOffer from "./components/DailyOffer";
 import OurMenu from "./components/OurMenu";
 import IntroVideo from "./components/IntroVideo";
 import OurIngredients from "./components/OurIngredients";
+import OurBlog from "./components/OurBlog";
 
 export default function Home() {
   return (
@@ -17,7 +18,7 @@ export default function Home() {
       <OurMenu />
       <IntroVideo />
       <OurIngredients />
-      {/* <OurBlog /> */}
+      <OurBlog />
       {/* <ReserveTable /> */}
     </>
   );
