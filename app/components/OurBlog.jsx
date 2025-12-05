@@ -1,7 +1,15 @@
+"use client";
+
 import Image from "next/image";
-import React from "react";
+import React, { useEffect } from "react";
 
 const OurBlog = () => {
+  useEffect(() => {
+    if (typeof window !== "undefined") {
+      const WOW = require("wowjs").WOW; // ← درست
+      new WOW({ live: false }).init(); // ← فقط WOW، نه WOW.WOW
+    }
+  }, []);
   return (
     <div className="our-blog">
       <div className="container">

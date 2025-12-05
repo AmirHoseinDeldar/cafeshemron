@@ -7,6 +7,7 @@ import OurMenu from "./components/OurMenu";
 import IntroVideo from "./components/IntroVideo";
 import OurIngredients from "./components/OurIngredients";
 import OurBlog from "./components/OurBlog";
+import ReserveTable from "./components/ReserveTable";
 
 export default function Home() {
   return (
@@ -19,7 +20,7 @@ export default function Home() {
       <IntroVideo />
       <OurIngredients />
       <OurBlog />
-      {/* <ReserveTable /> */}
+      <ReserveTable />
     </>
   );
 }
