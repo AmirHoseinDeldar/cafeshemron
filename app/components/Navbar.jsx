@@ -38,7 +38,11 @@ const Navbar = () => {
                       منو
                     </a>
                   </li>
-
+                  <li className="nav-item">
+                    <a className="nav-link" href="/gallery">
+                      گالری
+                    </a>
+                  </li>
                   <li className="nav-item">
                     <a className="nav-link" href="/contact-us">
                       تماس با ما
@@ -84,25 +88,26 @@ const Navbar = () => {
                     خانه
                   </a>
                 </li>
-
                 <li className="nav-item">
                   <a className="nav-link" href="/about-us">
                     درباره ما
                   </a>
                 </li>
-
                 <li className="nav-item">
                   <a className="nav-link" href="/services">
                     خدمات
                   </a>
                 </li>
-
                 <li className="nav-item">
                   <a className="nav-link" href="/menu">
                     منو
                   </a>
                 </li>
-
+                <li className="nav-item">
+                  <a className="nav-link" href="/gallery">
+                    گالری
+                  </a>
+                </li>
                 <li className="nav-item">
                   <a className="nav-link" href="/contact-us">
                     تماس با ما
